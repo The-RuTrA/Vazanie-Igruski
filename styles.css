@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #b388eb, #7e57c2);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: rgba(123, 81, 255, 0.85);
+  padding: 25px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 12px rgba(126, 87, 194, 0.6);
+}
+
+.container {
+  flex: 1;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 35px;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.toys {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.toy {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  color: #4a148c;
+  box-shadow:
+    0 10px 20px rgba(126, 87, 194, 0.4),
+    0 6px 6px rgba(126, 87, 194, 0.2);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.toy:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow:
+    0 16px 28px rgba(123, 81, 255, 0.6),
+    0 8px 10px rgba(123, 81, 255, 0.3);
+}
+
+.toy img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 14px rgba(126, 87, 194, 0.4);
+}
+
+.toy h3 {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #7b1fa2;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+footer {
+  background: rgba(123, 81, 255, 0.85);
+  color: #eee;
+  text-align: center;
+  padding: 22px 0;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  box-shadow: 0 -4px 14px rgba(126, 87, 194, 0.5);
+}
+
+.contacts {
+  margin-top: 35px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #f3eafc;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+.contacts a {
+  color: #d1c4e9;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 14px;
+  transition: color 0.25s ease;
+}
+
+.contacts a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header {
+    font-size: 1.8rem;
+    padding: 18px 0;
+  }
+  .container {
+    margin: 25px 15px;
+  }
+  .contacts {
+    font-size: 1rem;
+  }
+}
